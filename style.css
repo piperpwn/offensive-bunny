@@ -77,3 +77,16 @@ pre.ascii{font-family: "Courier New", Courier, monospace; white-space:pre; backg
   .logo{width:56px;height:56px}
   nav a{margin-left:8px;font-size:13px}
 }
+
+/* welcome section */
+.welcome-img {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.welcome-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #663355; /* viền hồng tím */
+}
