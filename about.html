@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About — Offensive Bunny</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">OB</div>
+        <div>
+          <h1 class="site-title">Offensive Bunny</h1>
+          <div class="site-desc">Security research, bounties & writeups</div>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="projects/bug-bounty-methodology.html">Projects</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main class="card" style="margin-top:18px">
+      <h2>About Me</h2>
+      <p>I’m <strong>Offensive Bunny</strong>, a security researcher focused on web application security, exploit development, and bug bounty hunting. I publish writeups, PoCs, and tools that help automate routine security tasks.</p>
+
+      <h3 style="margin-top:12px">Focus areas</h3>
+      <ul style="color:var(--muted)">
+        <li>Web vulnerabilities: XSS, SQLi, XXE, SSRF, deserialization</li>
+        <li>Smart contract & Web3 security</li>
+        <li>Exploit development & PoC</li>
+        <li>CTF challenges & tooling</li>
+      </ul>
+
+      <h3 style="margin-top:12px">Disclosure & contact</h3>
+      <p style="color:var(--muted)">If you find a vulnerability, please contact me via email (PGP available) or open a GitHub issue on the project. Response time: typically within 7 days for initial triage.</p>
+
+      <p style="margin-top:12px"><strong>PGP key fingerprint:</strong> <span style="color:var(--muted)">YOURKEYID</span></p>
+    </main>
+
+    <footer style="margin-top:18px">
+      © <span id="year2"></span> Offensive Bunny
+    </footer>
+  </div>
+
+<script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>

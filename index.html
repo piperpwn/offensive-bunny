@@ -1,49 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-  <title>Offensive Bunny</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Offensive Bunny — Security research & writeups</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="#">About</a>
-      <a href="#">Blog</a>
-      <a href="#">Website</a>
-    </nav>
-  </header>
-
   <div class="container">
-    <h1>Offensive Bunny</h1>
-    <p>A simple portfolio and blog site.</p>
+    <header>
+      <div class="brand">
+        <div class="logo">OB</div>
+        <div>
+          <h1 class="site-title">Offensive Bunny</h1>
+          <div class="site-desc">Security research, bounties & writeups</div>
+        </div>
+      </div>
 
-    <h2>Portfolio</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Project 1</h3>
-        <p>This is an example project.</p>
-      </div>
-      <div class="card">
-        <h3>Project 2</h3>
-        <p>Another project description.</p>
-      </div>
-      <div class="card">
-        <h3>Project 3</h3>
-        <p>Some research details.</p>
-      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="projects/bug-bounty-methodology.html">Projects</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <h2>Welcome</h2>
+          <p class="kv">Hi — I document vulnerability research, PoCs and bug bounty writeups. Below are recent projects and latest posts.</p>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h2>Portfolio</h2>
+          <div class="cards" style="margin-top:12px">
+            <div class="project-card">
+              <h3>Bug Bounty Methodology</h3>
+              <p>Framework for triage, exploitation and responsible disclosure.</p>
+              <a href="projects/bug-bounty-methodology.html">Read</a>
+            </div>
+            <div class="project-card">
+              <h3>Custom Exploit Tool</h3>
+              <p>Small toolkit to help fuzz complex web inputs and ABIs.</p>
+              <a href="projects/custom-exploit-tool.html">Read</a>
+            </div>
+            <div class="project-card">
+              <h3>CTF Writeups</h3>
+              <p>Collection of CTF challenges and exploitation notes.</p>
+              <a href="projects/ctf-writeups.html">Read</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h2>Latest Blog Posts</h2>
+          <ul class="post-list" style="margin-top:12px">
+            <li>
+              <a href="blog/2025-09-30-sample-writeup.html">Sample writeup post</a>
+              <div class="post-meta">Sep 30, 2025 — writeup</div>
+            </li>
+            <li>
+              <a href="blog/2025-08-10-xxe-vulnerability.html">XXE Vulnerability — analysis & PoC</a>
+              <div class="post-meta">Aug 10, 2025 — research</div>
+            </li>
+            <li>
+              <a href="blog/2025-07-22-sqli-bounty.html">SQLi bounty — root cause & fix</a>
+              <div class="post-meta">Jul 22, 2025 — bounty</div>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3>About</h3>
+          <p class="kv">Offensive Bunny — security researcher focused on web3, application security and exploit development.</p>
+          <div class="badges" style="margin-top:12px">
+            <span class="badge">Bug Bounty</span>
+            <span class="badge">Research</span>
+            <span class="badge">CTF</span>
+          </div>
+          <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:12px 0">
+          <div class="kv">Contact</div>
+          <div style="margin-top:8px">
+            <a class="btn" href="mailto:youremail@example.com">Email</a>
+            <a class="btn" style="margin-left:8px" href="https://github.com/piperpwn" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3>Milestones</h3>
+          <ul style="color:var(--muted);padding-left:18px;margin:8px 0 0;">
+            <li>2023 — Started bug bounty</li>
+            <li>2024 — First public disclosure</li>
+            <li>2025 — Published research</li>
+          </ul>
+        </div>
+      </aside>
     </div>
 
-    <h2>Blog</h2>
-    <ul>
-      <li><b>2025-09-30</b> — Sample writeup post</li>
-      <li><b>2025-09-20</b> — Another blog entry</li>
-    </ul>
+    <footer>
+      © <span id="year"></span> Offensive Bunny · Built with ❤️
+    </footer>
   </div>
 
-  <footer>
-    <p>© 2025 Offensive Bunny</p>
-  </footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
