@@ -85,8 +85,9 @@ pre.ascii{font-family: "Courier New", Courier, monospace; white-space:pre; backg
 }
 
 .welcome-img img {
-  max-width: 50%;
-  height: auto;
-  border-radius: 10px;
-  border: 2px solid #663355; /* viền hồng tím */
+  width: 180px;        /* đặt chiều rộng ảnh nhỏ lại */
+  height: auto;        /* giữ tỉ lệ gốc */
+  border-radius: 50%;  /* nếu muốn ảnh tròn như avatar */
+  border: 2px solid #663355;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.4); /* hiệu ứng hồng nhẹ */
 }
