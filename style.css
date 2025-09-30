@@ -85,7 +85,7 @@ pre.ascii{font-family: "Courier New", Courier, monospace; white-space:pre; backg
 }
 
 .welcome-img img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   border-radius: 10px;
   border: 2px solid #663355; /* viền hồng tím */
