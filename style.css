@@ -60,7 +60,10 @@ h2{margin:0 0 8px;color:var(--accent-2)}
 .post-meta{color:var(--muted);font-size:13px}
 
 /* sidebar */
-aside .card{position:sticky;top:20px}
+aside .card:first-child {
+  position: sticky;
+  top: 20px;
+}
 .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
 .badge{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--accent);font-size:13px;border:1px solid rgba(255,255,255,0.03)}
 
